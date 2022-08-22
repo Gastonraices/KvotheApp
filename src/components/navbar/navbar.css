@@ -1,0 +1,33 @@
+.header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    padding-right: 40px;
+    
+}
+
+.header-navbar {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-navlink {
+    font-size: 15px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
