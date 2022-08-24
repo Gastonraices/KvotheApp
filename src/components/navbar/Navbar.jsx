@@ -1,4 +1,5 @@
 import './navbar.css'
+import { IoCart, IoPersonSharp } from "react-icons/io5";
 
 
 export const Navbar = () => {
@@ -14,6 +15,8 @@ export const Navbar = () => {
                     <a href='' className="header-navlink">OUTLET</a>
                     <a href='' className="header-navlink">CONTACTO</a>
                 </nav>
+                <IoPersonSharp className='person-cart'/>
+                <IoCart className='icon-cart'/>
             </div>
         </header>
     )
