@@ -1,11 +1,27 @@
 import './container.css'
-import { IoIosCard } from "react-icons/io";
+import { useEffect, useState } from "react"
+import { pedirDatos } from "../../helpers/pedirDatos"
+import ItemList from "../ItemList/ItemList"
 
-export const ItemListContainer = ( {cuotas = " 3 y 6 cuotas sin interes"} ) => {
-    return(
+export const ItemListContainer = () => {
+
+    const [productos, setProductos] = useState([])
+
+    useEffect(() => {
+        pedirDatos()
+            .then( (res) => {
+                setProductos(res)
+            })
+            .catch( (error) => {
+                console.log(error)
+            })
+    }, [])
+
+
+
+    return (
         <div className='container'>
-            <IoIosCard className='icon-card'/>
-            <h2> {cuotas} </h2>
+            <ItemList productos={productos}/>
         </div>
     )
 }
