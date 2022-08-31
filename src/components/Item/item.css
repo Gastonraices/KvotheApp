@@ -5,15 +5,20 @@
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 60px;
 }
 
 .item img{
     margin-top: auto;
-    height: 280px;
-    width: 230px;
+    height: 250px;
+    width: 210px;
 }
 
 .item h3{
     font-size: 15px;
+    margin: 6px;
+}
+
+.item a{
+    margin: 10px;
 }
