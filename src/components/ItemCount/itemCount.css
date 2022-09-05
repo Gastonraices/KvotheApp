@@ -1,0 +1,30 @@
+
+.item-Count{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.item-Count-button{
+    min-width: 60px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #adb5bd;
+    background: #adb5bd;
+}
+
+.item-Count-num{
+font-size: 15px;
+padding-left: 15px;
+padding-right: 15px;
+align-items: center;
+}
