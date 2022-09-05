@@ -1,5 +1,5 @@
 .header{
-    background-color: white;
+    background-color: gray;
     display: flex;
     flex-direction: row;
     padding-left: 200px;
@@ -14,9 +14,20 @@
 .header-title {
     font-size: 25px;
     font-weight: 700;
-    color: black;
+    color: red;
     padding-right: 60px;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: none;
 }
+.header-title-link{
+    text-decoration: none;
+}
+
+.header-title-link :hover{
+    color: white;
+}
+
+
 
 .header-navbar {
     min-width: 300px;
@@ -25,11 +36,30 @@
     align-items: center;
 }
 
-.header-navlink {
-    font-size: 17px;
-    color: black;
-    font-family: monospace;
+.header-navbar :hover{
+    color: red;
 }
+
+.header-navlink {
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.header-navlink-index{
+    font-size: 19px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+}
+
 
 .icon-cart{
     font-size: 25px;

@@ -1,4 +1,5 @@
 import './navbar.css'
+import { Link } from "react-router-dom";
 import { IoCart, IoPersonSharp } from "react-icons/io5";
 
 
@@ -8,12 +9,13 @@ export const Navbar = () => {
         <header className="header">
             <div className="header-container">
 
-                <h1 className="header-title">KVOTHE</h1>
-
+                
+                <Link to='/' className='header-title-link'><h1 className="header-title">KVOTHE</h1></Link>
                 <nav className="header-navbar">
-                    <a href='' className="header-navlink">SHOP</a>
-                    <a href='' className="header-navlink">OUTLET</a>
-                    <a href='' className="header-navlink">CONTACTO</a>
+                    <Link to='/' className="header-navlink-index">SHOP</Link>
+                    <Link to='/productos/electrica' className="header-navlink">ELECTRICA</Link>
+                    <Link to='/productos/acustica' className="header-navlink">ACUSTICA</Link>
+                    <Link to='/productos/electroacustica' className="header-navlink">ELECTROACUSTICA</Link>
                 </nav>
                 <IoPersonSharp className='person-cart'/>
                 <IoCart className='icon-cart'/>

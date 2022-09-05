@@ -21,4 +21,32 @@
 
 .item a{
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: red;
+}
+
+.item a {
+        min-width: 130px;
+        height: 20px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        outline: none;
+        border-radius: 20px;
+        border: 2px solid #d90429;
+        background: #d90429;
+}
+.item a:hover {
+    box-shadow: 0 3px #d90429;
+    top: 1px;
+}
+.item a:active {
+    box-shadow: 0 0 #d90429;
+    top: 5px;
 }
