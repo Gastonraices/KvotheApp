@@ -26,7 +26,7 @@ export const stock = [
     },
     {
         id: 4,
-        nombre: 'R0CKTILE',
+        nombre: 'ROCKTILE',
         precio: 4000,
         img: '../assets/products/rocktile.jpg',
         stock: 5,
