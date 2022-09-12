@@ -1,10 +1,16 @@
 
 .item-Count{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
+
+.item-Counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .item-Count-button{
     min-width: 60px;
@@ -27,4 +33,33 @@ font-size: 15px;
 padding-left: 15px;
 padding-right: 15px;
 align-items: center;
+}
+
+
+
+.item-count-button{
+    min-width: 90px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #d90429;
+    background: #d90429;
+}
+
+.item-count-button:hover {
+box-shadow: 0 3px #d90429;
+top: 1px;
+}
+
+
+.item-count-button:active {
+box-shadow: 0 0 #d90429;
+top: 5px;
 }
