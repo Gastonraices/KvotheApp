@@ -1,0 +1,15 @@
+
+.icon-carts{
+    text-decoration: none;
+    color: black;
+}
+
+.icon-carts:hover{
+    color: red;
+}
+
+.icon-cart{
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 50px;
+}

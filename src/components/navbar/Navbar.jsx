@@ -1,6 +1,7 @@
 import './navbar.css'
 import { Link } from "react-router-dom";
-import { IoCart, IoPersonSharp } from "react-icons/io5";
+import { IoPersonSharp } from "react-icons/io5";
+import  CartWidget  from '../CartWidget/CartWidget';
 
 
 export const Navbar = () => {
@@ -18,7 +19,7 @@ export const Navbar = () => {
                     <Link to='/productos/Electroacustica' className="header-navlink">ELECTROACUSTICA</Link>
                 </nav>
                 <IoPersonSharp className='person-cart'/>
-                <IoCart className='icon-cart'/>
+                <CartWidget/>
             </div>
         </header>
     )

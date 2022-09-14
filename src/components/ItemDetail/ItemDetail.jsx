@@ -1,5 +1,6 @@
 import './itemDetail.css'
 import { ImBubble, ImTruck } from "react-icons/im";
+import { BsArrowLeftCircle } from "react-icons/bs";
 import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
 import React, { useState } from 'react'
@@ -11,7 +12,6 @@ const ItemDetail = ({item}) => {
 
 
     const { cart, addToCart, isInCart } = useCartContext()
-    console.log(cart)
 
 
     const [cantidad, setCantidad] = useState(1)
@@ -30,7 +30,9 @@ const ItemDetail = ({item}) => {
     return (
         <>
             <div className='item-detail'>
-                <img className='item-img' src={item.img}/>
+                <div>
+                    <img className='item-img' src={item.img}/>
+                </div>
                 <div className='item-detail-info'>
                     <h3>{item.nombre}</h3>
                     <h5>{item.category}</h5>
@@ -38,7 +40,11 @@ const ItemDetail = ({item}) => {
 
                     {
                 isInCart(item.id)
-                ?   <Link to="/cart" className='item-detail-comprar'>COMPRAR</Link> 
+                ?   
+                <div className='item-detail-compras'> 
+                    <Link to="/cart" className='item-detail-comprar'>COMPRAR</Link> 
+                    <Link to="/" className='item-detail-seguir'><BsArrowLeftCircle className='item-icon'/> SEGUIR COMPRANDO</Link> 
+                </div>
                 : 
                     <ItemCount className='item-Count' 
                     stock={item.stock} 
