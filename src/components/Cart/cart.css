@@ -7,9 +7,25 @@
     margin: 30px;
 }
 
+.cart-h1{
+    color: white;
+    padding-bottom: 10px;
+    background-color: black;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+
+.cart-vacio{
+    display: flex;
+    margin: 50px;
+    padding-top: 40px;
+}
+
 .cart-item{
     display: flex;
-    margin: 10px;
+    justify-content: center;
+    margin: 50px;
 }
 
 
@@ -24,16 +40,23 @@
 .cart-cantidad{
     padding: 24px;
 }
-
+.cart-total{
+    margin-top: 100px;
+    padding-left: 500px;
+    padding-right: 500px;
+    font-size: 30px;
+}
 
 .cart-botones{
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
 }
 
 
 .cart-eliminar {
     color: #fff;
-    padding: 10px 10px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -41,7 +64,6 @@
     border-radius: 5px;
     border: none;
     background-color: #ef233c;
-    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
 }
 .cart-eliminar:active {
     box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
@@ -63,7 +85,6 @@
     border-radius: 5px;
     border: none;
     background-color: #6c757d;
-    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
     padding-top: 10px;
     margin-right: 20px;
     padding-bottom: 8px;
@@ -87,7 +108,6 @@
     border-radius: 5px;
     border: none;
     background-color: red;
-    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
     margin-right: 20px;
 }
 .cart-vaciar:active {
@@ -109,7 +129,6 @@
     border-radius: 5px;
     border: none;
     background-color: #3a86ff;
-    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
 }
 .cart-pagar:active {
     box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;

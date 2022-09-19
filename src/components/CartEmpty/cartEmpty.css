@@ -1,0 +1,36 @@
+.cart-vacio{
+    display: flex;
+    margin: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.cartEmpty-volver{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cart-volver{
+        text-decoration: none;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background-color: #6c757d;
+        padding-top: 10px;
+        margin-right: 20px;
+        padding-bottom: 8px;
+    }
+    .cart-volver:active {
+        box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+    }
