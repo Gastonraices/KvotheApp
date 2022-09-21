@@ -11,7 +11,7 @@ import { useCartContext } from "../../Context/CartContext"
 const ItemDetail = ({item}) => {
 
 
-    const { cart, addToCart, isInCart } = useCartContext()
+    const { addToCart, isInCart } = useCartContext()
 
 
     const [cantidad, setCantidad] = useState(1)

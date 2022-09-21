@@ -2,6 +2,14 @@
 .icon-carts{
     text-decoration: none;
     color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+
+.cart-visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .icon-carts:hover{
