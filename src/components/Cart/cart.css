@@ -116,6 +116,7 @@
 
 
 .cart-pagar {
+    text-decoration: none;
     min-width: 130px;
     height: 40px;
     color: #fff;
@@ -129,6 +130,9 @@
     border-radius: 5px;
     border: none;
     background-color: #3a86ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cart-pagar:active {
     box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;

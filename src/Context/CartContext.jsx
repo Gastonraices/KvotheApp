@@ -1,8 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
+import Swal from 'sweetalert2'
 
 
 
 export const CartContext = createContext()
+const init = JSON.parse(localStorage.getItem('carrito')) || []
 
 export const CartProvider = ({children}) => {
 
@@ -33,6 +35,20 @@ const clearCart = () => {
     setCart([])
 }
 
+const comprar = (id) => {
+    Swal.fire({
+        title: 'Compra exitosa!',
+        text: `Tu número de orden es: ${id}`,
+        icon: 'success',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Genial!'
+    })
+    setCart([])
+}
+
+useEffect(() => {
+    localStorage.setItem('carrito', JSON.stringify(cart))
+}, [cart])
 
 return (
     <CartContext.Provider value={{
@@ -43,6 +59,7 @@ return (
         cartTotal,
         clearCart,
         removeItem,
+        comprar,
     }}>
         {children}
     </CartContext.Provider>
