@@ -54,7 +54,7 @@
     background-color: whitesmoke;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .item-detail-ayuda{
@@ -87,6 +87,7 @@
         padding-top: 10px;
         padding-bottom: 2px;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     .item-detail-comprar:hover{
         background: #fff;

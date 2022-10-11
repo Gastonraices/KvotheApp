@@ -8,7 +8,8 @@ const init = JSON.parse(localStorage.getItem('carrito')) || []
 
 export const CartProvider = ({children}) => {
 
-    const [cart, setCart] = useState([])
+
+    const [cart, setCart] = useState(init)
 
     const addToCart = (item) => {
     setCart([...cart, item])
@@ -32,7 +33,19 @@ const cartTotal = () => {
 }
 
 const clearCart = () => {
-    setCart([])
+    Swal.fire({
+        title: 'estas seguro?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, Vaciar',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            setCart([])
+        }
+    })
 }
 
 const comprar = (id) => {
@@ -49,6 +62,8 @@ const comprar = (id) => {
 useEffect(() => {
     localStorage.setItem('carrito', JSON.stringify(cart))
 }, [cart])
+
+
 
 return (
     <CartContext.Provider value={{

@@ -1,3 +1,11 @@
+## Name
+Kvotheapp-guitars-GastonRaices
+
+## Description
+Kvotheapp es un e-commerce basico, donde se muestran productos en stock, simulando los elementos basicos de una compra,
+utilizando componentes y logica basica de React.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

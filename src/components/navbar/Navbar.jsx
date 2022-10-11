@@ -18,7 +18,6 @@ export const Navbar = () => {
                     <Link to='/productos/Acustica' className="header-navlink">ACUSTICA</Link>
                     <Link to='/productos/Electroacustica' className="header-navlink">ELECTROACUSTICA</Link>
                 </nav>
-                <IoPersonSharp className='person-cart'/>
                 <CartWidget/>
             </div>
         </header>

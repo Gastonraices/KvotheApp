@@ -40,7 +40,7 @@ export const ItemListContainer = () => {
             {
                 loading 
                 ? <Spinner />
-                : <ItemList productos={productos}/>
+                : <ItemList productos={productos}/> 
             }
         </div>
     )

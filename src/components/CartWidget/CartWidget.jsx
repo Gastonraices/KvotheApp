@@ -8,12 +8,12 @@ import { CartContext } from '../../Context/CartContext'
 
 const CartWidget = () => {
 
-    const { cartQuantity, cart } = useContext(CartContext)
+    const { cartQuantity } = useContext(CartContext)
 
     return (
-        <Link to="/cart" className={`icon-carts ${cart.length > 0 ? 'cart-visible' :''}`} >
+        <Link to="/cart" className='icon-carts'>
             <IoCart className='icon-cart'/>
-            <span>{cartQuantity()}</span>
+            <span className='icon-quantity'>{cartQuantity()}</span>
         </Link>
     )
 }

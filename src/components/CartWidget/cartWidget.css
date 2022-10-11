@@ -2,15 +2,8 @@
 .icon-carts{
     text-decoration: none;
     color: black;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .1s ease-in-out;
 }
 
-.cart-visible {
-    visibility: visible;
-    opacity: 1;
-}
 
 .icon-carts:hover{
     color: red;
@@ -18,6 +11,10 @@
 
 .icon-cart{
     text-decoration: none;
-    font-size: 25px;
-    padding-left: 50px;
+    font-size: 27px;
+    padding-left: 80px;
+}
+
+.icon-quantity{
+    font-size: 17px;
 }

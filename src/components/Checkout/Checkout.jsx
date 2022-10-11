@@ -20,7 +20,6 @@ const Checkout = () => {
         codigoPostal: '',
     })
 
-
     const handleInputChange = (e) => {
         setValues({
             ...values,
@@ -39,25 +38,13 @@ const Checkout = () => {
         }
         
 
-        if (values.nombre.length < 2) {
-            alert("Nombre incorrecto")
-            return
-        }
-
-        if (values.email.length < 2) { 
-            alert("Email incorrecto")
-            return 
-        }
-
         const ordenesRef = collection(db, 'ordenes')
 
         addDoc(ordenesRef, orden)
             .then((doc) =>{
-                console.log(doc.id)
                 comprar(doc.id)
             })
     }
-
 
     if (cart.length === 0) {
         return <Navigate to="/"/>
